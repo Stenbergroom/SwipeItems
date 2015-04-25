@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item android:id="@+id/action_listview"
+        android:title="ListView"
+        android:orderInCategory="100">
+    </item>
+
+    <item android:id="@+id/action_gridview"
+            android:title="GridView"
+            android:orderInCategory="100">
+    </item>
+
+    <item android:id="@+id/action_nexted"
+            android:title="Complicate">
+    </item>
+</menu>
