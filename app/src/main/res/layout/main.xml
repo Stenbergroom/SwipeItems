@@ -1,16 +1,40 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+<com.daimajia.swipe.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/godfather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:drag_edge="bottom">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-</RelativeLayout>
+        <ImageView
+                android:src="@drawable/bird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include
+                layout="@layout/sample_together"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </include>
+
+        <ImageView
+                android:src="@drawable/hand"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"/>
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>
