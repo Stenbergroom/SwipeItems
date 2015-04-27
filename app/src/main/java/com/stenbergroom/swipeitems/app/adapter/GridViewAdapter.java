@@ -4,9 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.daimajia.swipe.adapters.BaseSwipeAdapter;
 
-/**
- * Created by Sten on 25.04.2015.
- */
+
 public class GridViewAdapter extends BaseSwipeAdapter {
     @Override
     public int getSwipeLayoutResourceId(int i) {

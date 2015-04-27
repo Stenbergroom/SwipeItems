@@ -5,9 +5,6 @@ import com.daimajia.swipe.adapters.ArraySwipeAdapter;
 
 import java.util.List;
 
-/**
- * Created by Sten on 25.04.2015.
- */
 public class ArraySwipeAdapterSample<T> extends ArraySwipeAdapter {
 
     public ArraySwipeAdapterSample(Context context, int resource) {
