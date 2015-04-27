@@ -9,7 +9,7 @@
             android:id="@+id/swipe"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            swipe:horizontalSwipeOffset="25dp">
+            >
 
         <LinearLayout
                 android:background="#FF5534"
