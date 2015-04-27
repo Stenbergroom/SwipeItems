@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:tag="Bottom2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/magnifier"
+                android:src="@drawable/magnifier"
+                android:background="#F7E79C"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:id="@+id/star"
+                android:src="@drawable/star"
+                android:background="#4CD964"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:id="@+id/trash"
+                android:src="@drawable/trash"
+                android:background="#FF3B30"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:tag="Hover"
+                android:text="TEST TEXT TEST TEXT TEST TEXT TEST TEXT TEST TEXT TEST TEXT "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:visibility="invisible"
+                android:id="@+id/click"
+                android:text="Click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>
