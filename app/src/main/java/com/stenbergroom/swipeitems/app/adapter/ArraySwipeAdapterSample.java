@@ -2,6 +2,7 @@ package com.stenbergroom.swipeitems.app.adapter;
 
 import android.content.Context;
 import com.daimajia.swipe.adapters.ArraySwipeAdapter;
+import com.stenbergroom.swipeitems.app.R;
 
 import java.util.List;
 
@@ -33,6 +34,6 @@ public class ArraySwipeAdapterSample<T> extends ArraySwipeAdapter {
 
     @Override
     public int getSwipeLayoutResourceId(int i) {
-        return 0;
+        return R.id.swipe;
     }
 }
