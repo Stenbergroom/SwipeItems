@@ -44,6 +44,12 @@ public class MyActivity extends Activity {
         sample2.findViewById(R.id.star).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(MyActivity.this, "Star", Toast.LENGTH_SHORT).show();
+            }
+        });
+        sample2.findViewById(R.id.trash).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Toast.makeText(MyActivity.this, "Trash Bin", Toast.LENGTH_SHORT).show();
             }
         });
