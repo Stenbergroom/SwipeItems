@@ -1,29 +1,41 @@
 package com.stenbergroom.swipeitems.app.adapter;
 
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import com.daimajia.swipe.adapters.BaseSwipeAdapter;
+import com.stenbergroom.swipeitems.app.R;
 
 
 public class GridViewAdapter extends BaseSwipeAdapter {
-    @Override
-    public int getSwipeLayoutResourceId(int i) {
-        return 0;
+
+    private Context mContext;
+
+    public GridViewAdapter(Context mContext){
+        this.mContext = mContext;
     }
 
     @Override
-    public View generateView(int i, ViewGroup viewGroup) {
-        return null;
+    public int getSwipeLayoutResourceId(int position) {
+        return R.id.swipe;
     }
 
     @Override
-    public void fillValues(int i, View view) {
+    public View generateView(int position, ViewGroup parent) {
+        return LayoutInflater.from(mContext).inflate(R.layout.grid_item, null);
+    }
 
+    @Override
+    public void fillValues(int position, View convertView) {
+        TextView t = (TextView) convertView.findViewById(R.id.position);
+        t.setText((position + 1) + ".");
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return 50;
     }
 
     @Override
@@ -33,6 +45,6 @@ public class GridViewAdapter extends BaseSwipeAdapter {
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 }
