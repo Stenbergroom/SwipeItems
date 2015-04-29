@@ -3,9 +3,7 @@ SwipeItems
 Swipe layouts
 
 ![](demo/different.gif)
-
 ![](demo/list.gif)
-
 ![](demo/grid.gif)
 
 ## Usage
