@@ -2,7 +2,11 @@ SwipeItems
 =======
 Swipe layouts
 
+![](https://github.com/Stenbergroom/BottomSheet/blob/master/demo/different.gif?raw=true)
 
+![](https://github.com/Stenbergroom/BottomSheet/blob/master/demo/list.gif)\n
+
+![](https://github.com/Stenbergroom/BottomSheet/blob/master/demo/grid.gif)
 
 ## Usage
 #### Gradle
