@@ -8,6 +8,7 @@ Swipe layouts
 
 ![](https://github.com/Stenbergroom/BottomSheet/blob/master/demo/grid.gif)
 
+//
 ## Usage
 #### Gradle
 
