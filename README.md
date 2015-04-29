@@ -5,7 +5,6 @@ Swipe layouts
 
 
 ## Usage
-=======
 #### Gradle
 
 ```groovy
