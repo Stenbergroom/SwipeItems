@@ -32,7 +32,6 @@ public class GridViewExample extends Activity {
         gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                //Log.d("onItem", "onItemLongClick: " + position);
                 Toast.makeText(mContext, "OnItemLongClick: "+ position, Toast.LENGTH_SHORT).show();
                 return false;
             }
@@ -40,14 +39,12 @@ public class GridViewExample extends Activity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Log.d("onItem", "onItemClick: " + position);
                 Toast.makeText(mContext, "OnItemClick: "+ position, Toast.LENGTH_SHORT).show();
             }
         });
         gridView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                //Log.d("onItem", "onItemSelected: " + position);
                 Toast.makeText(mContext, "OnItemSelected: "+ position, Toast.LENGTH_SHORT).show();
             }
 

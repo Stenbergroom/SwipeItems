@@ -31,14 +31,6 @@ public class ListViewExample extends Activity {
         mListView = (ListView)findViewById(R.id.listview);
 
 
-        //The following comment is the sample usage of ArraySwipeAdapter.
-
-//        String[] adapterData = new String[]{"Activity", "Service", "Content Provider", "Intent", "BroadcastReceiver", "ADT", "Sqlite3", "HttpClient",
-//                "DDMS", "Android Studio", "Fragment", "Loader", "Activity", "Service", "Content Provider", "Intent",
-//                "BroadcastReceiver", "ADT", "Sqlite3", "HttpClient", "Activity", "Service", "Content Provider", "Intent",
-//                "BroadcastReceiver", "ADT", "Sqlite3", "HttpClient"};
-//        mListView.setAdapter(new ArraySwipeAdapterSample<String>(this, R.layout.listview_item, R.id.position, adapterData));
-
         mAdapter = new ListViewAdapter(this);
         mListView.setAdapter(mAdapter);
         mAdapter.setMode(SwipeItemMangerImpl.Mode.Single);
@@ -91,16 +83,12 @@ public class ListViewExample extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.my, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_listview) {
             startActivity(new Intent(this, ListViewExample.class));

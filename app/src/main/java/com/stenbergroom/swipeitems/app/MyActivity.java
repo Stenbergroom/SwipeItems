@@ -21,9 +21,6 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        //SwipeLayout swipeLayout = (SwipeLayout)findViewById(R.id.godfather);
-        //swipeLayout.setDragEdge(SwipeLayout.DragEdge.Bottom); // Set in XML
-
         // sample1
 
         sample1 = (SwipeLayout)findViewById(R.id.sample1);
@@ -86,15 +83,12 @@ public class MyActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.my, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The actionbar will automatically handle clicks on the Home/Up button,
-        // so long as you specify a parent activity in AndroidManifest.XML.
         int id = item.getItemId();
         if(id == R.id.action_listview){
             startActivity(new Intent(this, ListViewExample.class));
